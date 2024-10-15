@@ -2,7 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-import '../landing_screen/landing_screen.dart';
+import '../../../../../core/constatnts/asset_images.dart';
+import '../../../../landing_screen/landing_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -65,29 +66,18 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // Logo and App name
-              Image.asset("assets/images/logo.png", height: size.height * 0.6),
-              const SizedBox(height: 40),
+              Image.asset(AssetImages.logo, height: size.height * 0.2),
+              SizedBox(height: 10,),
+              Text("WhatsUP",style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),),
+              SizedBox(height: 50,),
+              Text("The best chat app for this centry",style: TextStyle(color: Color(0XFF25D366)),)
 
-              // Loading Indicator
-              Column(
-                children: const [
-                  CircularProgressIndicator(
-                    color: Colors.green,
-                    backgroundColor: Colors.transparent,
-                  ),
-                  SizedBox(height: 10),
-                  Text(
-                    "Loading...",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 19,
-                    ),
-                  ),
-                ],
-              ),
+
+
             ],
           ),
         ),
+        
       ),
     );
   }
