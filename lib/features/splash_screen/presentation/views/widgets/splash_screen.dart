@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/constatnts/asset_images.dart';
-import '../../../../landing_screen/landing_screen.dart';
+import '../../../../auth/presentation/views/widgets/login_body.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -43,7 +43,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
   void goToNext() {
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => LandingScreen()),
+      MaterialPageRoute(builder: (context) => LoginBody()),
     );
   }
 
