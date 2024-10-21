@@ -1,11 +1,10 @@
-import 'package:chat_app/features/home/views/home_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:fluttertoast/fluttertoast.dart';
-import '../../../../../core/constatnts/asset_images.dart';
 import '../../../../../core/shared_widgets/custom_button.dart';
 import '../../../../../core/shared_widgets/dafault_text.dart';
 import '../../../../../core/themes/styles.dart';
+import '../../../../home/presentaion/views/home_view.dart';
 import '../login_view.dart';
 import 'logo.dart';
 

@@ -3,10 +3,10 @@ import 'package:chat_app/features/auth/presentation/views/widgets/login_title.da
 import 'package:chat_app/features/auth/presentation/views/widgets/logo.dart';
 import 'package:chat_app/features/auth/presentation/views/widgets/password_field.dart';
 import 'package:chat_app/features/auth/presentation/views/widgets/register_row.dart';
-import 'package:chat_app/features/home/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+import '../../../../home/presentaion/views/home_view.dart';
 import 'login_button.dart';
 
 class LoginBody extends StatefulWidget {

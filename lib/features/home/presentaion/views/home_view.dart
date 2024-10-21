@@ -1,4 +1,4 @@
-import 'package:chat_app/features/home/views/widgets/home_body.dart';
+import 'package:chat_app/features/home/presentaion/views/widgets/home_body.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
