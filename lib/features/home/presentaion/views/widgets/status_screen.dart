@@ -54,7 +54,7 @@ class StatusScreen extends StatelessWidget {
             radius: 28,
             backgroundImage: AssetImage(AssetImages.photo),
           ),
-          title: const Text('John Doe'),
+          title: const Text('kamel'),
           subtitle: const Text('Today, 12:30 PM'),
           onTap: () {
 
@@ -65,7 +65,7 @@ class StatusScreen extends StatelessWidget {
             radius: 28,
             backgroundImage: AssetImage(AssetImages.photo),
           ),
-          title: const Text('Jane Smith'),
+          title: const Text('ahmed'),
           subtitle: const Text('Today, 11:15 AM'),
           onTap: () {
             // Logic to view status updates

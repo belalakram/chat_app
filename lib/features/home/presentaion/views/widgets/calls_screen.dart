@@ -14,7 +14,7 @@ class CallsScreen extends StatelessWidget {
             radius: 28,
             backgroundImage: AssetImage(AssetImages.photo), // Corrected to AssetImage
           ),
-          title: const Text('John Doe'),
+          title: const Text('kamel'),
           subtitle: Row(
             children: const [
               Icon(Icons.call_missed, color: Colors.red, size: 16),
@@ -36,11 +36,9 @@ class CallsScreen extends StatelessWidget {
         ListTile(
           leading: const CircleAvatar(
             radius: 28,
-            backgroundImage: NetworkImage(
-              'https://via.placeholder.com/150', // Placeholder profile picture
-            ),
+            backgroundImage: AssetImage(AssetImages.photo),
           ),
-          title: const Text('Jane Smith'),
+          title: const Text('ahmed'),
           subtitle: Row(
             children: const [
               Icon(Icons.call_made, color: Colors.green, size: 16),
@@ -64,7 +62,7 @@ class CallsScreen extends StatelessWidget {
             radius: 28,
             backgroundImage: AssetImage(AssetImages.photo),
           ),
-          title: const Text('Michael Johnson'),
+          title: const Text('belal'),
           subtitle: Row(
             children: const [
               Icon(Icons.videocam, color: Colors.blue, size: 16),

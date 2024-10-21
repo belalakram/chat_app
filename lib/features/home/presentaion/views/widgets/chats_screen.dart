@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../core/constatnts/asset_images.dart';
+
 class ChatsScreen extends StatelessWidget {
   const ChatsScreen({super.key});
 
@@ -10,7 +12,7 @@ class ChatsScreen extends StatelessWidget {
       itemBuilder: (context, index) {
         return ListTile(
           leading: const CircleAvatar(
-            backgroundImage: NetworkImage('https://via.placeholder.com/150'), // Example image
+            backgroundImage: AssetImage(AssetImages.photo), // Example image
           ),
           title: const Text('Contact Name'),
           subtitle: const Text('Last message...'),
