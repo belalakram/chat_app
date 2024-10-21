@@ -37,6 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   google_fonts: ^6.2.1
   fluttertoast: ^8.2.8
+  wp_search_bar: ^0.1.4
+
 
 
 
