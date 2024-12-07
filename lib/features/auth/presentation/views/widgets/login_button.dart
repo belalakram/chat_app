@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-
 import '../../../../../core/shared_widgets/custom_button.dart';
 
 class LoginButton extends StatelessWidget {
@@ -20,17 +19,32 @@ class LoginButton extends StatelessWidget {
     return CustomButton(
       text: 'Log In',
       func: () {
-        if (!emailController.text.contains('@')) {
-          displayToastMssg('Email address isn\'t valid', context);
-        } else if (passwordController.text.isEmpty) {
-          displayToastMssg('Password is mandatory', context);
-        } else {
+        // Validate email
+        if (emailController.text.isEmpty || !RegExp(r"^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z]+").hasMatch(emailController.text)) {
+          displayToastMssg('Please enter a valid email address.', context);
+        }
+        // Validate password
+        else if (passwordController.text.isEmpty) {
+          displayToastMssg('Password is mandatory.', context);
+        }
+        // If both validations pass, proceed with the login
+        else {
           onSuccess();
         }
       },
     );
   }
 }
-displayToastMssg(String msg, BuildContext context) {
-  Fluttertoast.showToast(msg: msg);
+
+// Function to display toast messages
+void displayToastMssg(String msg, BuildContext context) {
+  Fluttertoast.showToast(
+    msg: msg,
+    toastLength: Toast.LENGTH_SHORT,
+    gravity: ToastGravity.BOTTOM, // Adjust the position of the toast message
+    timeInSecForIosWeb: 1,
+    backgroundColor: Colors.black54,
+    textColor: Colors.white,
+    fontSize: 16.0,
+  );
 }
